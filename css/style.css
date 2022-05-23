@@ -801,7 +801,10 @@ body {
     background-image: url(../img/main/make-an-appointment/duotone.jpg);
     background-repeat: no-repeat;
     background-size: auto;
+    position: relative;
+    z-index: 50;
 }
+
 .make-an-appointment__container {
     display: flex;
     padding: 130px 15px 210px 15px;
@@ -896,13 +899,39 @@ body {
 /* ================================== make-an-appointment - form  */
 
 .form-appointment {
+    position: relative;
+    z-index: 5;
 }
+
+.form-appointment::before {
+    content: "";
+    position: absolute;
+    background: url(../img/main/make-an-appointment/circles4.svg) 0 0 no-repeat;
+    left: -100px;
+    top: 0px;
+    width: 335px;
+    height: 566px;
+    z-index: -2;
+}
+
+.form-appointment::after {
+    content: "";
+    position: absolute;
+    background: url(../img/main/make-an-appointment/blob4.svg) 0 0 no-repeat;
+    left: -70px;
+    top: 0px;
+    width: 642.34px;
+    height: 725.21px;
+    z-index: -1;
+}
+
 .form-appointment__container {
     padding: 76px 57px 76px 57px;
     max-width: 585px;
     background: #5d62b5;
     border-radius: 40px;
 }
+
 .form-appointment__title {
     margin-bottom: 43px;
     color: #ffffff;
@@ -995,6 +1024,12 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 950px) {
+    .form-appointment::after {
+        visibility: hidden;
+    }
+}
+
 @media (max-width: 770px) {
     .form-appointment__container {
         padding: 50px 57px 35px 57px;
@@ -1017,6 +1052,8 @@ body {
     padding: 100px 87px 0px 87px;
     margin-top: -80px;
     border-radius: 40px;
+    position: relative;
+    z-index: 5;
 }
 .gallery__top {
 }
@@ -1061,6 +1098,7 @@ body {
     background-size: cover;
     overflow: hidden;
     position: relative;
+
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 40px;
     padding-bottom: 56.73758865248227%;
@@ -1184,6 +1222,20 @@ body {
 .our-customers__container {
     margin: 80px auto 80px auto;
     padding: 120px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.our-customers__container:after {
+    content: "";
+    position: absolute;
+    background: url(../img/main/our-customers/blob3.svg) 0 0 no-repeat;
+    bottom: 0px;
+    left: -200px;
+    width: 1018.33px;
+    height: 1504.81px;
+    object-fit: cover;
+    z-index: -1;
 }
 .our-customers__subtitle {
 }
