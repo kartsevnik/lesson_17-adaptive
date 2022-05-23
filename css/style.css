@@ -428,14 +428,13 @@ body {
 }
 .main-top__button {
     max-width: 210px;
-
     padding: 15px 24px;
 }
 
 @media (max-width: 770px) {
     .main-top__container {
         margin-top: 60px;
-        margin-bottom: 200px;
+        margin-bottom: 220px;
     }
 }
 
@@ -545,7 +544,7 @@ body {
 
 @media (max-width: 770px) {
     .our-promise-to-you__container {
-        padding: 20px 15px 20px 15px;
+        padding: 0px 15px 20px 15px;
     }
     .our-promise-to-you__title {
         margin-bottom: 30px;
@@ -693,6 +692,9 @@ body {
     }
     .dog-with-ball__body {
         margin: 0 20%;
+    }
+    .dog-with-ball__container::before {
+        visibility: hidden;
     }
 }
 
@@ -851,9 +853,9 @@ body {
     .make-an-appointment__container {
         display: flex;
         flex-direction: column;
-        padding: 10px 5px 10px 5px;
+        padding: 25px 5px 25px 5px;
         justify-content: space-between;
-        margin-bottom: 80px;
+        margin-bottom: 120px;
     }
     .make-an-appointment__body {
         color: #ffffff;
@@ -1043,6 +1045,12 @@ body {
         text-align: center;
     }
 }
+
+@media (max-width: 500px) {
+    .form-appointment__bottom {
+        align-self: center;
+    }
+}
 /* ================================== gallery - slider */
 .gallery {
     color: #fff;
@@ -1098,7 +1106,6 @@ body {
     background-size: cover;
     overflow: hidden;
     position: relative;
-
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 40px;
     padding-bottom: 56.73758865248227%;
@@ -1216,6 +1223,16 @@ body {
     }
 }
 
+@media (max-width: 380px) {
+    .gallery__slider label {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        min-width: 100%;
+        text-align: center;
+    }
+}
+
 /* ================================== our-customers */
 .our-customers {
 }
@@ -1310,6 +1327,12 @@ body {
     }
 }
 
+@media (max-width: 770px) {
+    .our-customers__container {
+        padding: 120px 15px 60px 15px;
+    }
+}
+
 /* ================================== our-impact  */
 
 .our-impact {
@@ -1347,6 +1370,11 @@ body {
 .our-impact__image {
     flex: 0 1 50%;
     padding: 0 15px;
+    transition-duration: 1s;
+}
+
+.our-impact__image:hover {
+    filter: drop-shadow(0px 16px 32px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
 }
 
 .our-impact__image img {
@@ -1378,6 +1406,9 @@ body {
     }
     .our-impact__image {
         flex: 0 1 0%;
+        visibility: hidden;
+    }
+    .our-impact::before {
         visibility: hidden;
     }
     .our-impact__title {
@@ -1683,7 +1714,7 @@ body {
         justify-content: space-around;
     }
     .explore-title {
-        text-align: center;
+        /* text-align: left; */
     }
 
     .explore-title:not(:last-child) {
