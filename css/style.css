@@ -802,7 +802,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     position: relative;
-    z-index: 50;
+    z-index: 5;
 }
 
 .make-an-appointment__container {
@@ -900,7 +900,7 @@ body {
 
 .form-appointment {
     position: relative;
-    z-index: 5;
+    z-index: 3;
 }
 
 .form-appointment::before {
@@ -1046,14 +1046,14 @@ body {
 /* ================================== gallery - slider */
 .gallery {
     color: #fff;
+    position: relative;
+    z-index: 10;
 }
 .gallery__container {
     background-color: #5d62b5;
     padding: 100px 87px 0px 87px;
     margin-top: -80px;
     border-radius: 40px;
-    position: relative;
-    z-index: 5;
 }
 .gallery__top {
 }
@@ -1231,9 +1231,9 @@ body {
     position: absolute;
     background: url(../img/main/our-customers/blob3.svg) 0 0 no-repeat;
     bottom: 0px;
-    left: -200px;
+    left: -150px;
     width: 1018.33px;
-    height: 1504.81px;
+    height: 1604.81px;
     object-fit: cover;
     z-index: -1;
 }
