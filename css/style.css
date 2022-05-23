@@ -1,0 +1,611 @@
+@import "null.css";
+@import "fonts.css";
+
+/* body and container */
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    background-color: #f5f5f5;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    background-image: url(../img/main/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="__container"] {
+    margin: 0px auto;
+    max-width: 1020px;
+    padding: 0 15px;
+}
+
+/* ======================================  Общие классы */
+
+.title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42px;
+}
+
+.pink_subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    position: relative;
+    padding-left: 30px;
+    color: #5d62b5;
+    text-transform: uppercase;
+}
+
+.pink_subtitle:before {
+    content: "";
+    background: url(../img/ico/overline-viola.png) 0 0 no-repeat;
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+}
+
+.white_subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-left: 30px;
+    position: relative;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.white_subtitle:before {
+    content: "";
+    background: url(../img/ico/overline-mark.png) 0 0 no-repeat;
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+}
+
+[class*="subtitle"]:not(:last-child) {
+    margin-bottom: 33px;
+}
+
+.cards-title {
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 26px;
+    color: #f2726f;
+}
+
+/* ========== buttons */
+
+.button {
+    align-self: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #f2726f;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition-duration: 1s;
+    box-shadow: #000 1px 1px 1px;
+}
+
+/* main content */
+
+.main {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+/* ================================== who-we-are  */
+
+.who-we-are {
+}
+
+.who-we-are_margin {
+    margin: -180px auto 54px auto;
+}
+
+.who-we-are__container {
+}
+
+.who-we-are__body {
+    padding: 100px 87px 300px 87px;
+    position: relative;
+    background-color: #5d62b5;
+    border-radius: 40px;
+}
+
+.who-we-are__body:after {
+    content: "";
+    position: absolute;
+    background: url(../img/main/who-we-are/blob2.png) 0 0 no-repeat;
+    bottom: -148px;
+    left: -15px;
+    width: 665px;
+    height: 591px;
+    object-fit: cover;
+}
+
+.who-we-are__body:before {
+    content: "";
+    position: absolute;
+    background: url(../img/main/who-we-are/circles.png) 0 0 no-repeat;
+    top: -109px;
+    right: -76px;
+    width: 201px;
+    height: 317px;
+}
+
+.who-we-are__title {
+    max-width: 583px;
+    color: #ffffff;
+    margin-bottom: 36px;
+}
+.who-we-are__text {
+    margin-bottom: 54px;
+}
+
+.image-dog {
+    position: relative;
+    max-width: 846px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0px 16px 24px 0px #26262633, 0px 8px 16px 0px #2626263d;
+}
+
+.image-dog_margin {
+    margin: -350px auto 0 auto;
+}
+
+.image-dog__picture {
+    object-fit: cover;
+    width: 846px;
+    height: 420px;
+    max-width: 100%;
+    display: block;
+}
+
+/* ================================== our-promise-to-you  */
+
+.our-promise-to-you {
+}
+.our-promise-to-you__container {
+    padding: 80px 0 122px 0;
+}
+
+.our-promise-to-you__title {
+    max-width: 583px;
+    margin-bottom: 68px;
+}
+.our-promise-to-you__row {
+}
+
+/* ================================== row-love-care   */
+
+.row-love-care {
+    display: flex;
+    flex: 0 1 1020px;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    row-gap: 24px;
+}
+
+.row-love-care__card {
+    flex: 1 0 33.333%;
+    min-width: 324px;
+    display: flex;
+    padding: 0 12px;
+    /* column-gap: 23px; */
+}
+
+.row-love-care__ico {
+    flex: 0 0 63px;
+    object-fit: cover;
+    height: 63px;
+}
+
+.row-love-care__body {
+    padding-left: 23px;
+}
+
+.row-love-care__title {
+}
+
+.row-love-care__title:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.row-love-care__text {
+}
+
+/* ================================== dog-with-ball   */
+
+.dog-with-ball {
+    background-color: #29c3be;
+    color: #f5f5f5;
+    position: relative;
+    display: flex;
+}
+
+.dog-with-ball__container {
+    padding: 112px 0 169px 0;
+}
+
+.dog-with-ball::before {
+    content: "";
+    width: 744px;
+    height: 456px;
+    position: absolute;
+    background: url(../img/main/dog-with-ball/pup.png) 0 0 no-repeat;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.dog-with-ball::after {
+    content: "";
+    width: 473px;
+    height: 349px;
+    position: absolute;
+    background: url(../img/main/dog-with-ball/blob3.svg) 0 0 no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.dog-with-ball__container::after {
+    content: "";
+    width: 595px;
+    height: 387px;
+    position: absolute;
+    background: url(../img/main/dog-with-ball/line1.svg) 0 0 no-repeat;
+    top: 0;
+    right: 10%;
+}
+
+.dog-with-ball__container::before {
+    content: "";
+    width: 236px;
+    height: 317px;
+    position: absolute;
+    background: url(../img/main/dog-with-ball/circles-dog-ball.svg) 0 0 no-repeat;
+    bottom: 61px;
+    left: 0;
+    z-index: 1;
+}
+
+.dog-with-ball__body {
+    margin-left: 57%;
+}
+
+.dog-with-ball__body::after {
+    content: "";
+    width: 136px;
+    height: 136px;
+    position: absolute;
+    background: url(../img/main/dog-with-ball/tennis-ball.png) 0 0 no-repeat;
+    top: 25%;
+    right: 6%;
+    z-index: 2;
+}
+
+.dog-with-ball__title {
+    /* max-width: 411px; */
+    flex: 0 1 411px;
+    padding: 0 0 25px 0;
+    position: relative;
+    z-index: 4;
+}
+.dog-with-ball__title:not(:last-child) {
+    margin-bottom: 42px;
+}
+
+.dog-with-ball__button {
+    position: relative;
+    z-index: 4;
+    padding: 20px 24px;
+    flex: 0 0 100%;
+}
+
+/* ================================== our-services   */
+
+.our-services {
+    padding: 110px 12px 120px 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.our-services::before {
+    content: "";
+    background: url(../img/main/cards-services/Blob-white.png) 0 0 no-repeat;
+    width: 610px;
+    height: 1312px;
+    position: absolute;
+    top: -490px;
+    right: 0px;
+}
+
+.our-services__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.our-services__subtitle {
+}
+.our-services__title {
+    max-width: 583px;
+    margin-bottom: 78px;
+}
+.our-services__cards {
+    margin: 0px -12px;
+}
+.cards-services {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+.cards-services__card {
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 0px 12px;
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 44px;
+    transition-duration: 500ms;
+    min-width: 300px;
+}
+
+.cards-services__card:hover {
+    filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+
+.cards-services__ico {
+    width: 63px;
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 0 0 63px;
+}
+.cards-services__title {
+    margin-bottom: 20px;
+}
+
+.cards-services__text {
+    text-align: center;
+    flex: 1 1 auto;
+}
+.our-services__button {
+    margin-top: 66px;
+}
+
+.cards-services__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+.cards-services__link {
+}
+
+/* ================================== make-an-appointment  */
+
+.form-appointment {
+}
+.form-appointment__container {
+    padding: 76px 57px 76px 57px;
+    max-width: 585px;
+    background: #5d62b5;
+    border-radius: 40px;
+}
+.form-appointment__title {
+    margin-bottom: 43px;
+    color: #ffffff;
+    text-align: center;
+}
+.form-appointment__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-appointment__top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 22px;
+    margin: 0px -11px;
+}
+
+.form-appointment__bottom {
+    align-self: flex-end;
+}
+
+.form-appointment__line {
+    min-width: 200px;
+    flex: 1 1 50%;
+    padding: 0px 11px;
+}
+
+.form-appointment__input {
+    padding: 16px 23px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #5d62b5;
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.form-appointment__input:hover {
+    border: 2px solid #f2726f;
+}
+
+.form-appointment__input:focus {
+    background-color: #f2726f;
+}
+
+.form-appointment__input::placeholder {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+}
+
+.form-appointment__select {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+}
+
+.form-appointment__textarea {
+    flex: 0 1 100%;
+    padding: 0 11px 16px 11px;
+}
+
+.form-appointment__textarea-form {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    color: #ffffff;
+    background: #5d62b5;
+    min-height: 180px;
+    max-height: 300px;
+    resize: vertical;
+    padding: 17px 0px 0px 23px;
+    transition-duration: 1s;
+}
+
+.form-appointment__textarea-form:hover {
+    border: 2px solid #f2726f;
+}
+
+.form-appointment__textarea-form::placeholder {
+    color: #ffffff;
+}
+
+.form-appointment__button {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* ================================== our-impact  */
+
+.our-impact {
+    background: #29c3be;
+    padding: 112px 0px 112px 0px;
+    position: relative;
+}
+.our-impact__container {
+    position: relative;
+}
+
+.our-impact::before {
+    content: "";
+    background: url(../img/main/our-impact/blob-green.png) 0 0 / 100% no-repeat;
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 50%;
+    transform: translate(88%, 0);
+    width: 52%;
+    height: 100%;
+}
+
+.our-impact__body {
+    display: flex;
+    margin: 0px -15px;
+}
+
+.our-impact__content {
+    flex: 0 1 50%;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.our-impact__image {
+    flex: 0 1 50%;
+    padding: 0 15px;
+}
+
+.our-impact__image img {
+    max-width: 100%;
+    margin-top: -40%;
+    border-radius: 40px;
+}
+
+.our-impact__content:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.our-impact__subtitle {
+}
+
+.our-impact__title {
+    max-width: 411px;
+}
+
+.our-impact__image {
+}
+
+.our-impact__numbers {
+}
+
+/* ================================== row-numbers  */
+
+.row-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    background-color: #29c3be;
+    /* align-items: flex-start; */
+    margin: 0px -12px;
+}
+
+.row-numbers__item {
+    padding: 0 12px 0 12px;
+    flex: 0 1 25%;
+    min-width: 237px;
+    display: flex;
+}
+
+.row-numbers__ico {
+    flex: 0 0 76px;
+    height: 76px;
+    margin-right: 11px;
+}
+
+.row-numbers__number {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42px;
+    padding-bottom: 2px;
+}
+.row-numbers__text {
+    color: #5d62b5;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+/* ==================================== FOOTER */
+.footer {
+}
